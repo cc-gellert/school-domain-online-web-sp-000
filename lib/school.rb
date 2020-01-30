@@ -5,7 +5,7 @@ class School
   end 
   roster = {} 
   def add_student(name, grade)
-    roster.each |level, students|
+    roster.each do |level, students|
       if(level == grade)
         students << name 
       end 
