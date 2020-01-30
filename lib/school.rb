@@ -12,7 +12,6 @@ class School
     ROSTER 
   end 
   
-  
   def add_student(name, grade)
     ROSTER.each do |level, students|
       if(level == grade)
