@@ -29,7 +29,7 @@ class School
   
   def sort 
     ROSTER.map do |level, students|
-      students.sort 
+      students.flatten.sort 
     end 
   end 
 end 
