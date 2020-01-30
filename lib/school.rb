@@ -18,7 +18,7 @@ class School
         students << name 
       end 
     end 
-    ROSTER[grade] = []
+    ROSTER[grade] ||= []
     ROSTER[grade].push(name)
   end 
   
