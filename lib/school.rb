@@ -20,7 +20,7 @@ class School
       end 
     end 
     ROSTER[grade] = []
-    ROSTER[grade] << name 
+    ROSTER[grade].push(name)
   end 
   
   def grade(num)
