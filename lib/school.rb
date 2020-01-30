@@ -8,9 +8,9 @@ class School
   
   ROSTER = {} 
   
-  # def roster 
-  #   ROSTER 
-  # end 
+  def roster 
+    ROSTER 
+  end 
   
   def add_student(name, grade)
     ROSTER.each do |level, students|
