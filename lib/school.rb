@@ -28,6 +28,8 @@ class School
   end 
   
   def sort 
-    ROSTER.sort 
+    ROSTER.map do |level, students|
+      students.sort 
+    end 
   end 
 end 
