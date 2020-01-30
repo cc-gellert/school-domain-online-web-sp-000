@@ -14,12 +14,9 @@ class School
   
   def add_student(name, grade)
     ROSTER.each do |level, students|
-      if(level == grade)
-        students << name 
-      end 
+      ROSTER[grade] ||= []
+      ROSTER[grade].push(name)
     end 
-    ROSTER[grade] ||= []
-    ROSTER[grade].push(name)
   end 
   
   def grade(num)
