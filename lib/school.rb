@@ -16,11 +16,10 @@ class School
     ROSTER.each do |level, students|
       if(level == grade)
         students << name 
-      else 
-        ROSTER[grade] = []
-        ROSTER[grade].push(name)
       end 
     end 
+    ROSTER[grade] = []
+    ROSTER[grade].push(name)
   end 
   
   def grade(num)
